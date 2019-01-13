@@ -9,9 +9,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Link to="/amsterdam" classname="tab-links" active >Amsterdam</Link>
-        <Link to="/newYork" classname="tab-links"  >New York</Link>
-        <Link to="/moscow" classname="tab-links"  >Moscow</Link>
+        <Link to="/amsterdam" className="tab-links" active='true' >Amsterdam</Link>
+        <Link to="/newYork" className="tab-links"  >New York</Link>
+        <Link to="/moscow" className="tab-links"  >Moscow</Link>
   
         <Switch>
           <Route path={`/amsterdam`} component={AmsterdamWeather} />

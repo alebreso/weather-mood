@@ -16,11 +16,9 @@ export default class AmsterdamWeather extends Component {
   }
 
   calculateWeather = (response) => {
-    console.log(response.body.list)
     let weatherAvg = 0
     response.body.list.map(weatherUpdates => {
       const condition = weatherUpdates.weather[0].main
-      console.log(condition)
       if(condition==='Thunderstorm') weatherAvg+=0.4
       if(condition==='Drizzle') weatherAvg+=1.8
       if(condition==='Rain') weatherAvg+=1.45
@@ -28,8 +26,8 @@ export default class AmsterdamWeather extends Component {
       if(condition==='Atmosphere') weatherAvg+=1.1
       if(condition==='Clear') weatherAvg+=2.5
       if(condition==='Clouds') weatherAvg+=2.15
+      return weatherAvg
     })
-    console.log((weatherAvg).toFixed(2))
     this.setState({height:(weatherAvg).toFixed(2)})
     return (weatherAvg).toFixed(2)
    }

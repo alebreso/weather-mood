@@ -9,7 +9,7 @@
 
 .amsterdam-weather-bar{
   width: 25px;
-  height: 100px;
+  height: 0px;
   position: absolute;
   bottom: 0px;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './AmsterdamWeather.css';
 import * as request from 'superagent'
-import { APIweather, amsterdam, moscow, newYork } from '../../const';
+import { APIweather, amsterdam } from '../../const';
 
 export default class AmsterdamWeather extends Component {
   state= {
@@ -26,6 +26,7 @@ export default class AmsterdamWeather extends Component {
       if(condition==='Atmosphere') weatherAvg+=1.1
       if(condition==='Clear') weatherAvg+=2.5
       if(condition==='Clouds') weatherAvg+=2.15
+      return weatherAvg
     })
     this.setState({height:(weatherAvg).toFixed(2)})
     return (weatherAvg).toFixed(2)
