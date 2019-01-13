@@ -1,0 +1,10 @@
+.newYork-weather-bar{
+  width: 25px;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.newYork-weather-bar:hover {
+  background-image: linear-gradient(to top ,red, orange, yellow, green);
+}

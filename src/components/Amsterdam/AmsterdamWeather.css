@@ -1,0 +1,20 @@
+.weather-bar-container {
+  width: 25px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin: 0 auto;
+  border: 2px black solid;
+}
+
+.amsterdam-weather-bar{
+  width: 25px;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.amsterdam-weather-bar:hover {
+  background-image: linear-gradient(to top ,red, orange, yellow, green);
+}
+
