@@ -49,8 +49,6 @@ export default class WeatherGauge extends Component {
   }
 
   render() {
-    console.log(this.props.location)
-    console.log(this.state)
     let city = this.props.location.pathname
     let style = {}
     if(city==='/amsterdam') {
