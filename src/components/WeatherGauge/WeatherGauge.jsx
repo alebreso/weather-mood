@@ -51,15 +51,25 @@ export default class WeatherGauge extends Component {
   render() {
     console.log(this.props.location)
     console.log(this.state)
-    const city = this.props.location.pathname
+    let city = this.props.location.pathname
     let style = {}
-    if(city==='/amsterdam') style={height:`${this.state.amsterdam}px`}
-    else if (city==='/newYork') style={height:`${this.state.newYork}px`}
-    else style={height:`${this.state.moscow}px`}
+    if(city==='/amsterdam') {
+      style={height:`${this.state.amsterdam}px`}
+      city=this.state.amsterdam
+    }
+    else if (city==='/newYork') {
+      style={height:`${this.state.newYork}px`}
+      city=this.state.newYork
+    }
+    else {
+      style={height:`${this.state.moscow}px`}
+      city=this.state.moscow
+    }
     return (
       <div>
         <div className="weather-bar-container">
           <div className={`weather-bar ${this.props.city}`} style={style} ></div>
+          <div className="city-height">{city}</div>
         </div>
       </div>
     )

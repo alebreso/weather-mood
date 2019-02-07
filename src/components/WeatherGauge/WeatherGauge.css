@@ -12,8 +12,15 @@
   height: 0px;
   position: absolute;
   bottom: 0px;
-}
-
-.weather-bar:hover {
   background-image: linear-gradient(to top ,red, orange, yellow, green);
 }
+
+.city-height {
+  position: absolute;
+  left: 30px;
+  bottom: 0px;
+}
+
+/* .weather-bar:hover {
+  background-image: linear-gradient(to top ,red, orange, yellow, green);
+} */
