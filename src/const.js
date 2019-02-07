@@ -1,4 +1,6 @@
-export const APIweather = "dc9018773ceda12171cfb7a8f5e16236";
+export const APIweather = "acb777e299c1788f325e262ab8bccc9c";
+
+export const baseURL = 'http://api.openweathermap.org/data/2.5/forecast'
 
 export const amsterdam = 2759794;
 
