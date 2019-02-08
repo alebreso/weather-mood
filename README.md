@@ -1,4 +1,4 @@
-# weather-mood<br>
+# weather-mood ❄️⛈🌩🌦☀️<br>
 this is a weather gauge for 3 different cities (Amsterdam, New York, Moscow ) <br>
 
 ## installation
